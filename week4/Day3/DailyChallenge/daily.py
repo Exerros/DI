@@ -28,3 +28,24 @@ print(letter_dict)
 # Sort the list in alphabetical order.
 # Return “Nothing” if you can’t afford anything from the store.
 
+wallet:int = int(input("Enter the amount of money in your wallet: $"))
+
+# List of items in the store and their prices
+store = {"Apple": 0.99, "Banana": 0.49, "Carrot": 0.69, "Donut": 1.29, "Eggs": 2.99}
+
+# Create a list of items that can be bought with the money in the wallet
+affordable_items = []
+for item, price in store.items():
+    if price <= wallet:
+        affordable_items.append(item)
+
+# Sort the list of affordable items in alphabetical order
+affordable_items.sort()
+
+# Display the result
+if affordable_items:
+    print("You can afford:")
+    for item in affordable_items:
+        print(item)
+else:
+    print("Nothing")
