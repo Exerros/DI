@@ -139,5 +139,5 @@ class Zoo:
         if animal_sold in self.animals:
             self.animals.remove(animal_sold)  
     
-
+# didnt manage to do it
     
