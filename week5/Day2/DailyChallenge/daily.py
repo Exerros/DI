@@ -59,9 +59,14 @@
 
 
 class Pagination(): 
-    def __init__(self, items, pageSize):
-        self.items= []
-        self.pageSize=10
+    def __init__(self, items=[], page_size = 10):
+        self.items = items
+        self.page_size = page_size
+        self.visible= items[:page_size]
         
-    def getVisibleItems():
+        
+    def getVisibleItems(self):
+        return self.visible
+    
+    def get_to_page(self, page_num):
         

@@ -86,7 +86,7 @@ dog1 = Dog("Garen" , 2 ,36)
 dog2 = Dog("Lux", 2 ,32)
 dog3 = Dog("Dante" , 9 , 16)
         
-# print(dog2.fight(dog3))
+print(dog2.fight(dog3))
 
 
 # # 🌟 Exercise 3 : Dogs Domesticated
