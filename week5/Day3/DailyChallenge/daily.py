@@ -12,9 +12,9 @@
 # Be able to put them in a list and sort them
 
 
-class Circle(self):
+class Circle():
     
-    def __init__(self, radius):
+    def __init__(self, radius: int):
         self.radius = radius
         self.diameter = radius * 2
         
